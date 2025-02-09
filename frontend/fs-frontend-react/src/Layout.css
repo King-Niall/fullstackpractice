@@ -1,0 +1,97 @@
+#root {
+    width: 100vw;
+    height: auto;
+    margin: 0 auto;
+    background-color: white;
+    padding: 0rem 1rem 0rem 1rem;
+    text-align: center;
+    
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+
+
+.logo {
+    color: wheat;
+    background-color: brown;
+    
+    margin-bottom: 2px;
+
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    border-radius:  10px 10px 10px 10px;
+    background-color: wheat;
+    width: auto;
+    height: 100vw;
+    color: brown;
+
+}
+
+header {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+    border-radius:  0px 0px 20px 20px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: wheat; /* Neutral background */
+    padding: 10px 20px;
+    border-radius:  0px 0px 20px 20px;
+
+}
+
+.fakeimg{
+    background-color: burlywood;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+}
+
+nav > ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    font-size: 1rem; /* Consistent and precise font size */
+    color: #333333;  /* Professional dark color for text */
+    text-decoration: none;
+    padding: 1px 5px;
+    border-radius: 4px;  /* Slight rounding for a modern look */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover state for better interactivity */
+nav ul li a:hover,
+nav ul li a:focus {
+
+
+    color: brown;
+}
+
+/* If you use separate left/right sections */
+.nav-left,
+.nav-right {
+    display: flex;
+    align-items: center;
+}

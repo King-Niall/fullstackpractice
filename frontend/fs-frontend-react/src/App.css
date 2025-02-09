@@ -1,0 +1,23 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: aliceblue;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo{
+  display: flex;
+
+}
+.nav{
+  display: flex;
+}
+.nav-left{
+  display: flex;
+
+}
+.nav-right{
+  display: flex;
+
+}
