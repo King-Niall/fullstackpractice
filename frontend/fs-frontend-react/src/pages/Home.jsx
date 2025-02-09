@@ -1,15 +1,24 @@
-export default function Home (){
-    return(
+export default function Home() {
+    return (
         <>
-        <h1>3dq3wdwq</h1>
-        <div className="post">
-            <h2>My First blog post</h2>
-            <div className="fakeimg">
-                A
+            <div className="posts">
+
+            <div className="post">
+                <div className="user">
+                    <div className="fakeimg">
+                        A
+                    </div>
+                    <h3 className="author">Jeremy2</h3>
+
+                </div>
+                <div className="content">
+                    <h1>Title</h1>
+                   <p> ladies and gentlemen boys and girls welcome to ladies and gentlemen boys and girls welcome to jermacraft jermacraft ladies and gentlemen boys and girls welcome to jermacraft
+                    </p>
+                </div>
             </div>
-            <h2>Posted by Jeremy2</h2>
-            <p>ladies and gentlemen boys and girls welcome to ladies and gentlemen boys and girls welcome to jermacraft jermacraft ladies and gentlemen boys and girls welcome to jermacraft</p>
-        </div>
+            </div>
+
         </>
     )
 }

@@ -1,5 +1,5 @@
 #root {
-    width: 100vw;
+    width: 95vw;
     height: auto;
     margin: 0 auto;
     background-color: white;
@@ -33,11 +33,13 @@ main {
     width: auto;
     height: 100vw;
     color: brown;
+    align-items: flex-start;
+
 
 }
 
 header {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); 
     border-radius:  0px 0px 20px 20px;
     margin-bottom: 15px;
     display: flex;
@@ -50,18 +52,69 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: wheat; /* Neutral background */
+    background-color: wheat;
     padding: 10px 20px;
     border-radius:  0px 0px 20px 20px;
 
 }
 
-.fakeimg{
-    background-color: burlywood;
-    border-radius: 100%;
-    width: 100px;
-    height: 100px;
+.posts{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
 }
+.post {
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.15);
+    margin: 16px auto;
+    max-width: 550px;
+    height: fit-content;
+    padding: 0px 0px 30px 0px;
+    background-color: brown;
+
+  }
+  
+  .user {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: wheat;
+    border-style: solid;
+
+  }
+
+  
+  .fakeimg {
+    width: 50px;
+    height: 50px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 12px;
+  }
+  
+  .author {
+    font-weight: 600;
+    margin: 0;
+    color: brown;
+  }
+  
+  .content  {
+    
+    font-size: 16px;
+    color: wheat;
+    padding: 0vw 2vw 0vw 2vw;
+    text-align: left;
+
+  }
+  
+  .content h1 {
+    font-size: larger;
+  }
 
 nav > ul {
     display: flex;
@@ -73,15 +126,14 @@ nav > ul {
 }
 
 nav ul li a {
-    font-size: 1rem; /* Consistent and precise font size */
-    color: #333333;  /* Professional dark color for text */
+    font-size: 1rem; 
+    color: #333333; 
     text-decoration: none;
     padding: 1px 5px;
-    border-radius: 4px;  /* Slight rounding for a modern look */
+    border-radius: 4px; 
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Hover state for better interactivity */
 nav ul li a:hover,
 nav ul li a:focus {
 
@@ -89,7 +141,6 @@ nav ul li a:focus {
     color: brown;
 }
 
-/* If you use separate left/right sections */
 .nav-left,
 .nav-right {
     display: flex;
