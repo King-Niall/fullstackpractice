@@ -6,13 +6,15 @@ import CreatePost from './pages/CreatePost';
 import ViewPost from './pages/ViewPost';
 
 const App = () => {
+
+
   return (
     <BrowserRouter>
       <Routes>
         <Route element={<Layout />}>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home/>} />
           <Route path="/posts/:id" element={<ViewPost />} />
-          <Route path="/create" element={<CreatePost />} />
+          <Route path="/create" element={<CreatePost/>} />
           <Route path="/edit/:id" element={<CreatePost />} />
         </Route>
       </Routes>

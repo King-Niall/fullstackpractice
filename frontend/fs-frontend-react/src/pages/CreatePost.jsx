@@ -1,20 +1,37 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import axios from 'axios';
 
 const fetchPostById = async (id) => {
-  return {
-    author: '',
-    title: '',
-    content: '...',
-  };
+  try {
+    const response = await axios.get(`http://localhost:8000/api/posts/${id}/`);
+    return response.data;
+  } catch (error) {
+    console.error('Error fetching post:', error);
+    throw error;
+  }
 };
 
 const createPost = async (postData) => {
-  console.log('Creating:', postData);
+  try {
+    const response = await axios.post('http://localhost:8000/api/posts/', postData);
+    console.log('Creating:', postData);
+    return response.data;
+  } catch (error) {
+    console.error('Error creating post:', error);
+    throw error;
+  }
 };
 
 const updatePost = async (id, postData) => {
-  console.log(`Updating ${id}:`, postData);
+  try {
+    const response = await axios.put(`http://localhost:8000/api/posts/${id}/`, postData);
+    console.log(`Updating ${id}:`, postData);
+    return response.data;
+  } catch (error) {
+    console.error(`Error updating post ${id}:`, error);
+    throw error;
+  }
 };
 
 function CreatePost() {

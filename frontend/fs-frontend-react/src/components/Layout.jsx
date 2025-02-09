@@ -34,12 +34,11 @@ const Layout = () => {
                 </nav>
             </header>
             <main>
-                {/* Nested pages will render here */}
                 <Outlet />
                 
             </main>
             <footer>
-                <p>© 2025 My React App</p>
+                <p>My Postings React App</p>
             </footer>
         </div>
     );
