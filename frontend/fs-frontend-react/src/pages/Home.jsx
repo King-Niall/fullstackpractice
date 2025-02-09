@@ -1,24 +1,46 @@
+import React from 'react';
+import Post from '../components/Post';
+
 export default function Home() {
-    return (
-        <>
-            <div className="posts">
-
-            <div className="post">
-                <div className="user">
-                    <div className="fakeimg">
-                        A
-                    </div>
-                    <h3 className="author">Jeremy2</h3>
-
-                </div>
-                <div className="content">
-                    <h1>Title</h1>
-                   <p> ladies and gentlemen boys and girls welcome to ladies and gentlemen boys and girls welcome to jermacraft jermacraft ladies and gentlemen boys and girls welcome to jermacraft
-                    </p>
-                </div>
-            </div>
-            </div>
-
-        </>
-    )
+  return (
+    <div className="posts">
+      <Post
+        fakeLetter="A"
+        author="Jeremy2"
+        title="Title"
+        content="Ladies and gentlemen boys and girls welcome to ladies and gentlemen  and girls welcome to jermacraft jermacraft ladies and gentlemen boys and girls welcome to jermacraft"
+      />
+         <Post
+        fakeLetter="A"
+        author="Jeremy2"
+        title="Title"
+        content="Ladies and gentlemen boys and girls welcome to ladies and gentlemen  and girls welcome to jermacraft jermacraft ladies and gentlemen boys and girls welcome to jermacraft"
+      />
+         <Post
+        fakeLetter="A"
+        author="Jeremy2"
+        title="Title"
+        content="Ladies and gentlemen boys and girls welcome to ladies and gentlemen  and girls welcome to jermacraft jermacraft ladies and gentlemen boys and girls welcome to jermacraft"
+      />
+         <Post
+        fakeLetter="A"
+        author="Jeremy2"
+        title="Title"
+        content="Ladies and gentlemen boys and girls welcome to ladies and gentlemen  and girls welcome to jermacraft jermacraft ladies and gentlemen boys and girls welcome to jermacraft"
+      />
+         <Post
+        fakeLetter="A"
+        author="Jeremy2"
+        title="Title"
+        content="Ladies and gentlemen boys and girls welcome to ladies and gentlemen  and girls welcome to jermacraft jermacraft ladies and gentlemen boys and girls welcome to jermacraft"
+      />
+         <Post
+        fakeLetter="A"
+        author="Jeremy2"
+        title="Title"
+        content="Ladies and gentlemen boys and girls welcome to ladies and gentlemen  and girls welcome to jermacraft jermacraft ladies and gentlemen boys and girls welcome to jermacraft"
+      />
+      {/* You can add more <Post> components here as needed */}
+    </div>
+  );
 }

@@ -4,7 +4,6 @@ import Layout from './components/Layout';
 import Home from './pages/Home';
 import CreatePost from './pages/CreatePost';
 import ViewPost from './pages/ViewPost';
-import EditPost from './pages/EditPost';
 
 const App = () => {
   return (
@@ -14,7 +13,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/posts/:id" element={<ViewPost />} />
           <Route path="/create" element={<CreatePost />} />
-          <Route path="/edit/:id" element={<EditPost />} />
+          <Route path="/edit/:id" element={<CreatePost />} />
         </Route>
       </Routes>
     </BrowserRouter>
