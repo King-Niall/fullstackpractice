@@ -8,8 +8,13 @@
     display: flex;
     justify-content: center;
 
-    
+
 }
+
+.post-detail>a {
+    color: brown;
+}
+
 
 .layout {
     width: 85vw;
@@ -22,26 +27,25 @@
 .logo {
     color: wheat;
     background-color: brown;
-    
+
     margin-bottom: 2px;
 
 }
 
 main {
     display: flex;
-    border-radius:  10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
     background-color: w;
     width: auto;
     height: fit-content;
     color: brown;
-    align-items: flex-start;
 
 
 }
 
 header {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); 
-    border-radius:  0px 0px 20px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 0px 0px 20px 20px;
     margin-bottom: 15px;
     display: flex;
     flex-direction: column;
@@ -55,26 +59,45 @@ nav {
     align-items: center;
     background-color: wheat;
     padding: 10px 20px;
-    border-radius:  0px 0px 20px 20px;
+    border-radius: 0px 0px 20px 20px;
 
 }
 
-.posts{
+.post-detail {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10vh;
+
+}
+
+.posts {
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    margin: 0 auto;
 }
+
 .post {
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
-    margin: 5px auto;
-    height: 200px;
-
-    padding: 0px 0px 30px 0px;
     background-color: brown;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
-  }
-  
-  .user {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.post a {
+    color: wheat;
+    font-weight: bolder;
+    font-size: large;
+}
+
+.user {
     display: flex;
     align-items: center;
     padding: 10px;
@@ -83,16 +106,16 @@ nav {
     justify-content: space-between;
     flex-wrap: wrap;
 
-  }
+}
 
-  .user span {
+.user span {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
 
-  
-  .fakeimg {
+
+.fakeimg {
     width: 50px;
     height: 50px;
     background-color: #007bff;
@@ -104,37 +127,37 @@ nav {
     font-size: 24px;
     font-weight: bold;
     margin-right: 12px;
-  }
-  
-  .author {
+}
+
+.author {
     font-weight: 600;
     margin: 0;
     color: brown;
-  }
-  
-  .content  {
-    
+}
+
+.content {
+
     font-size: 16px;
     color: wheat;
     padding: 0vw 2vw 0vw 2vw;
     text-align: left;
-  
 
-  }
-  
-  .content h1 {
+
+}
+
+.content h1 {
     font-size: larger;
-  }
-  .actions 
-  {
+}
+
+.actions {
     align-items: center;
     justify-content: center;
-    display:flex;
+    display: flex;
     margin-left: 10px;
-  }
+}
 
 
-nav > ul {
+nav>ul {
     display: flex;
     gap: 20px;
     list-style: none;
@@ -144,11 +167,11 @@ nav > ul {
 }
 
 nav ul li a {
-    font-size: 1rem; 
-    color: #333333; 
+    font-size: 1rem;
+    color: #333333;
     text-decoration: none;
     padding: 1px 5px;
-    border-radius: 4px; 
+    border-radius: 4px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -176,56 +199,67 @@ nav ul li a:focus {
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
-  }
-  
-  .form-group {
+}
+
+.form-group {
     margin-bottom: 15px;
-  }
-  
-  .form-label {
+}
+
+.form-label {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
     color: wheat;
-  }
-  
-  .form-input,
-  .form-textarea {
+}
+
+.form-input,
+.form-textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 14px;
     box-sizing: border-box;
-  }
-  
-  .form-input:focus,
-  .form-textarea:focus {
+}
+
+.form-input:focus,
+.form-textarea:focus {
     border-color: #66afe9;
     outline: none;
     box-shadow: 0 0 5px rgba(102, 175, 233, 0.6);
-  }
-  
-  .btn {
+}
+
+.btn {
     display: inline-block;
     padding: 10px 20px;
     font-size: 18px;
     border-radius: 4px;
     border: none;
     cursor: pointer;
-  }
-  
-  .btn-primary {
+}
+
+.btn-primary {
     background-color: wheat;
     color: brown;
     margin-right: 10px;
-  }
-  
-  .btn-delete {
+}
+
+.btn-delete {
     background-color: brown;
     color: wheat;
     margin-right: 10px;
-  }
-  
-  
+}
 
+.search-form {
+    display: flex;
+
+}
+
+.search-form>input {
+    border-radius: 25px;
+    padding: 0px 15px 0px 15px;
+    border: none;
+    margin-right: 10px;
+
+
+}

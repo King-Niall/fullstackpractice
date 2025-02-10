@@ -16,6 +16,8 @@ export default function Post({
     }
   };
 
+  const preview = content.length > 120 ? content.substring(0, 120) + "..." : content;
+
   return (
     <div className="post">
       <div className="user">
@@ -34,8 +36,9 @@ export default function Post({
       </div>
       </div>
       <div className="content">
-        <h1>{title}</h1>
-        <p>{content}</p>
+      <Link to={`/posts/${id}`}>
+          <h1>{title}</h1>
+        </Link>        <p>{preview}</p>
       </div>
 
     </div>
