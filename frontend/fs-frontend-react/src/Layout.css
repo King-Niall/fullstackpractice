@@ -79,6 +79,11 @@ nav {
     margin: 0 auto;
 }
 
+.btn-logout {
+    
+    margin: 0px;
+}
+
 .post {
     background-color: brown;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -187,8 +192,6 @@ nav ul li a:focus {
     display: flex;
     align-items: center;
 }
-
-
 
 
 

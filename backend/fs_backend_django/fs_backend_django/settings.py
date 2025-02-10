@@ -42,7 +42,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'posts',
-    'corsheaders'
+    'corsheaders',
+    'accounts',
+        'rest_framework.authtoken',
+
 ]
 
 MIDDLEWARE = [
@@ -75,6 +78,13 @@ TEMPLATES = [
     },
 ]
 
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',
+    ],
+
+}
 WSGI_APPLICATION = 'fs_backend_django.wsgi.application'
 
 

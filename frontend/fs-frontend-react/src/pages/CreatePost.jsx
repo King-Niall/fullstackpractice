@@ -39,6 +39,14 @@ function CreatePost() {
   const navigate = useNavigate();
   const isEditing = Boolean(id);
 
+  // Redirect if the user is not logged in
+  useEffect(() => {
+    const token = localStorage.getItem('token');
+    if (!token) {
+      navigate('/login');
+    }
+  }, [navigate]);
+
   const [formData, setFormData] = useState({
     author: '',
     title: '',

@@ -1,4 +1,3 @@
-// src/pages/Home.js
 import React, { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import axios from 'axios';
@@ -9,7 +8,6 @@ export default function Home() {
   const [searchParams] = useSearchParams();
   const query = searchParams.get('q') || '';
 
-  // Function to fetch posts (all or based on a search query)
   const fetchPosts = (query) => {
     let url = 'http://localhost:8000/api/posts/';
     if (query && query.trim() !== '') {
@@ -23,12 +21,10 @@ export default function Home() {
       .catch(console.error);
   };
 
-  // Fetch posts when the component mounts or when the query changes.
   useEffect(() => {
     fetchPosts(query);
   }, [query]);
 
-  // Function to handle deleting a post.
   const deletePost = (postId) => {
     axios.delete(`http://localhost:8000/api/posts/${postId}/`)
       .then(() => {
