@@ -1,7 +1,7 @@
-// PostDetail.js
 import React, { useState, useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import axios from 'axios';
+import PostDetail from '../components/PostDetail';
 
 export default function ViewPost() {
   const { id } = useParams();
@@ -26,12 +26,5 @@ export default function ViewPost() {
   if (error) return <div>{error}</div>;
   if (!post) return <div>No post found.</div>;
 
-  return (
-    <div className="post-detail">
-      <Link to="/">← Back to Posts</Link>
-      <h1>{post.title}</h1>
-      <p><strong>Author:</strong> {post.author}</p>
-      <div className="full-content">{post.content}</div>
-    </div>
-  );
+  return <PostDetail post={post} />;
 }
